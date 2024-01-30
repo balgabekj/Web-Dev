@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://www.sportcar-center.com/icc/callAction.do;jsessionid=0ABA9E496C4E9A6414CB08412C1A79A9.icc -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+
+
+
+
+<script type="text/javascript">
+		<!--
+
+			function logError(message,file,row)
+			{
+				if(!message && !file && !row)
+					message = "Error occured:\n" + window.name;
+				else if(!file && !row)
+					message = "Error occured:\n" + window.name + ": " + message;
+				else
+					message = "Error occured:\n\n        message: " + message + "\n        file: " + file + "\n        line: " + row + "\n\ncalled from:\n        frame: "+ window.name+"\n        href: "+window.location.href;
+
+				if(path && path.traceError)
+				{
+					try {
+						path.traceError(message, "", "");
+					}catch(ex){}
+				}
+				return true;
+			}
+		    window.onerror = logError;
+		//-->
+		</script>
+
+
+<script type="text/javascript">
+			var pathTop = self;
+			var path = null;
+			try {
+				pathTop = parent && parent.cc? parent: window.opener && window.opener.cc?window.opener: self;
+				path = pathTop.cc;
+				path.session = "";
+			}
+			catch(ex){}
+			
+		</script>
+
+<script type="text/javascript">
+if (path.disableResponseCheck)
+	path.disableResponseCheck["f_dyn"] = null;
+
+var serverEvent = "changeBPModule";
+var objects = [
+
+{"dV":[],"visible":true,"aux":{"trackingId":"message/PVA-5025 efa19b81-09e1-4c2c-90eb-70fe6f81d67b"},"editable":false,"imgLst":[],"tL":["PVA-5025 efa19b81-09e1-4c2c-90eb-70fe6f81d67b"],"id":"PVA-5025 efa19b81-09e1-4c2c-90eb-70fe6f81d67b","type":"dialog","selected":false,"desc":""},
+{"dV":[],"visible":true,"aux":{},"editable":false,"imgLst":[],"tL":["PVA-5025 efa19b81-09e1-4c2c-90eb-70fe6f81d67b"],"id":"dialogtitle","type":"headline","selected":false,"desc":""},
+{"dV":[{"aux":{"actionParameter":"key=exceptionhandler&value=PVA-5025 efa19b81-09e1-4c2c-90eb-70fe6f81d67bXXXpending"},"id":"button0","value":"OK","selected":false}],"visible":true,"aux":{"parent":"footer","defaultCancelAction":"PVA-5025 efa19b81-09e1-4c2c-90eb-70fe6f81d67bXXXcancel"},"editable":false,"imgLst":[],"tL":["PVA-5025 efa19b81-09e1-4c2c-90eb-70fe6f81d67b"],"id":"dialogbuttons","type":"actionList","selected":false,"desc":""},
+{"dV":[{"aux":{"actionParameter":"key=exceptionhandler&value=PVA-5025 efa19b81-09e1-4c2c-90eb-70fe6f81d67bXXXpending"},"id":"buttonCancel","value":"OK","selected":false}],"visible":true,"aux":{"parent":"header"},"editable":false,"imgLst":[],"tL":["PVA-5025 efa19b81-09e1-4c2c-90eb-70fe6f81d67b"],"id":"dialogheaderbuttons","type":"actionList","selected":false,"desc":""},
+{"dV":[],"visible":true,"aux":{},"editable":false,"imgLst":[],"tL":["PVA-5025 efa19b81-09e1-4c2c-90eb-70fe6f81d67b"],"id":"dialogmessage","type":"textList","selected":false,"desc":"No knowledgebase found for dealer RL or importer RL"},
+{"dV":[],"visible":true,"aux":{"IMG":"headline_5025.gif"},"editable":false,"imgLst":[],"tL":["PVA-5025 efa19b81-09e1-4c2c-90eb-70fe6f81d67b"],"id":"dialogtitle","type":"image","selected":false,"desc":""}];
+
+function updateUI()
+{
+    // Test
+    parent.$("#ui").removeClass("mainRun");
+    path.traceInfo("updateUI()", "start: " + serverEvent + ": " + objects.length + " objects ---"); if(path && path.cnst)
+	{
+		path.handleServerEvent(serverEvent, objects, 6);		
+	}
+	else
+	{
+		traceError("updateUI()", "retrying in 500ms");
+		setTimeout("updateUI()",500);
+	}
+	if(parent.util)
+	{
+		parent.util.addClass("ready", parent.document.body);
+		path.traceInfo("updateUI()", "finished");
+	}
+	if (path && parent.util && parent.util.isSpringAction(serverEvent))
+	{
+		path.fireEvent("selectItem", serverEvent);
+	}
+	return true;
+}
+    </script>
+</head>
+<body onload="updateUI()">
+
+</body></html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://ckapp.ru/frame.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Title</title>
+</head>
+<body>
+<script>
+    (function () {
+        var cookieNames = ['ck_params_cookie', 'ck_params_long_time', 'unique_user_session_id', 'keys_names'];
+        window.onload = function () {
+            try {
+                window.top.postMessage({
+                    ck_params_cookie: localStorage.getItem('ck_params_cookie'),
+                    ck_params_long_time: localStorage.getItem('ck_params_long_time'),
+                    unique_user_session_id: localStorage.getItem('unique_user_session_id'),
+                }, '*')
+            } catch (e) {
+                console.log('Cookies and LocalStorage Disabled', e);
+            }
+        }
+        window.addEventListener('message', function (msg) {
+            if (typeof msg.data === 'object' && Object.keys(msg.data).indexOf('ck_params_cookie') !== -1) {
+                try {
+                    cookieNames.forEach((name) => {
+                        localStorage.removeItem(name);
+                        if (msg.data[name]) localStorage.setItem(name, msg.data[name]);
+                    })
+                } catch (e) {
+                    console.log('Cookies and LocalStorage Disabled', e);
+                }
+            }
+        });
+    })()
+</script>
+
+</body></html>
