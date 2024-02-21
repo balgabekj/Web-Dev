@@ -1,0 +1,29 @@
+<h2>Products</h2>
+<div *ngFor="let product of products" class="container">
+  <img src="{{product.image}}">
+  <div class="characteristics">
+    <h3 *ngIf="product.name">
+
+      <a [title]="product.name + ' details'">
+        {{ product.name }}
+      </a>
+
+    </h3>
+
+    <h4 class="price" *ngIf="product.price">
+      Price: {{product.price}}
+    </h4>
+
+    <p *ngIf="product.description">
+      Description: {{product.description}}
+    </p>
+
+    <a href="{{product.kaspiLink}}">
+      kaspi.kz
+    </a>
+
+    <button type="button" (click)="share(product.kaspiLink)">
+      share
+    </button>
+  </div>
+</div>
